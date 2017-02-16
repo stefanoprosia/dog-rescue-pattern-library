@@ -13,3 +13,63 @@
 html {
   font-family: var(--font-primary);
 }
+
+h1 {
+  color: var(--font-primary);
+}
+
+h2 {
+  color: var(--color-primary-light);
+}
+
+.nav {
+  color: #fff;
+}
+
+.nav a:hover {
+  color: var(--color-secondary);
+}
+
+strong {
+  color: var(--color-neutral-beige);
+}
+
+small {
+  color: var(--color-neutral-beige);
+}
+
+.card {
+  color: var(--color-neutral-beige);
+}
+
+.card a {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--color-primary-light);
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--color-primary-light);
+}
+
+ul {
+  color: #b7b7b7;
+}
+
+li {
+  color: #b7b7b7;
+}
+
+dl {
+  color: #b7b7b7;
+}
+
+p {
+  color: #000;
+}
+
+mark {
+  background-color: var(--color-neitral-beige);
+}
