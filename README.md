@@ -3,7 +3,7 @@ name: "Loyal Rescue"
 fontURL: "https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700|Source+Code+Pro:400,700"
 fonts:
   primary: |
-    The primary typeface is a strong and bold face that is easily readable. It has different variations of type and style.
+    The primary typeface is a strong face that is easily readable. It has different variations of type and style.
 
     Use the primary typeface for body copy and any captions.
   secondary: |
