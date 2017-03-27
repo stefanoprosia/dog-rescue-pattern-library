@@ -13,11 +13,17 @@ header h1 {
   font-family: Arimo, serif;
 }
 
+nav a {
+  white-space: nowrap;
+  text-decoration: none;
+}
+
 nav ul {
   font-size: 1.125rem;
   padding-left: 1em;
   overflow: hidden;
   list-style-type: none;
+  text-align: center;
 }
 
 nav ul li {
@@ -32,4 +38,10 @@ nav a:hover {
 
   color: #f27678;
   padding: 11.7px;
+}
+
+.banner {
+  position: relative;
+  max-height: 500px;
+  overflow: hidden;
 }
