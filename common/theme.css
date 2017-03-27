@@ -15,7 +15,7 @@ html {
 }
 
 h1 {
-  color: var(--font-primary);
+  color: var(--color-whatever);
 }
 
 h2 {

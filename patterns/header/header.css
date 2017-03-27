@@ -1,7 +1,7 @@
 header {
   background-color: var(--color-primary);
 
-  color: #000;
+  color: #fff;
   padding-top: .5em;
   overflow: hidden;
 }
@@ -32,18 +32,4 @@ nav a:hover {
 
   color: #f27678;
   padding: 11.7px;
-}
-
-.btn {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
-
-  color: #7cbce7;
-}
-
-.btn-light {
-  background-color: var(--color-primary-light);
-  border-color: var(--color-primary-light);
-
-  color: #7cbce7;
 }
