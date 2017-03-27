@@ -3,11 +3,11 @@ name: "Loyal Rescue"
 fontURL: "https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700|Source+Code+Pro:400,700"
 fonts:
   primary: |
-    The primary typeface is a strong face that is easily readable. It has different variations of type and style.
+    This primary typeface is easy to read. It has different variations of type and style. It looks good shrunk down to 8 point and can be identified as body copy type.
 
     Use the primary typeface for body copy and any captions.
   secondary: |
-    The secondary typeface is shows strength and dominance. It's nice and bold that can be read easily and would work well with emphasis and any headers needed.
+    The secondary typeface is nice and bold that is easy to read. It would work well with emphasis and any headers and sub-headers.
 
     The secondary typeface should be used for headings, buttons and to highlight important things for the consumer to be aware of.
 colors:
