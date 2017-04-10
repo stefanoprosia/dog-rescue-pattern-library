@@ -2,4 +2,6 @@ footer {
   background-color: var(--color-primary);
   color: #fff;
   padding-left: 1em;
+  padding-bottom: .01em;
+
 }
