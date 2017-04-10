@@ -50,3 +50,7 @@ nav a:hover {
   width: 100%;
   display: inline-flex;
 }
+
+.logo-wrapper {
+  width: 100px;
+}
