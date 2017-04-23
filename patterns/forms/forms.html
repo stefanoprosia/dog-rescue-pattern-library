@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Forms</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../../common/modules.css" rel="stylesheet">
+  <link href="../../common/grid.css" rel="stylesheet">
+  <link href="../../common/type.css" rel="stylesheet">
+  <link href="../../common/theme.css" rel="stylesheet">
+  <link href="../buttons/buttons.css" rel="stylesheet">
+  <link href="forms.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="title block">
+    <h2 class="gutter-1-2 pad-t-2 pad-b-2 push-0">Sign Up Now!</h2>
+  </div>
+  <form class="grid text-left" method="post" novalidate>
+    <fieldset class="">
+      <legend class="unit xs-1 gutter-1-2 pad-t pad-b push-0 field-group giga">Form/Application</legend>
+      <div class="error-message error-message-highlighted push island-1-2 unit xs-1 gutter-1-2" role="alert" aria-live="assertive">
+        <h4 class="push-0">
+          <i class="icon i-32"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
+          <span class="icon-label">Required</span>
+        </h4>
+      </div>
+      <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
+        <label for="name" class="micro">Name</label>
+        <input id="name" required aria-describedby="name-error">
+        <p class="error-message milli island-1-4 push-0" id="name-error">
+          <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
+          <span class="icon-label italic micro">Provide a name</span>
+        </p>
+      </div>
+</body>
+</html>
