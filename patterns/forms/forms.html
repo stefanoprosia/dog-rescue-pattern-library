@@ -33,5 +33,47 @@
           <span class="icon-label italic micro">Provide a name</span>
         </p>
       </div>
+      <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
+        <label for="email" class="micro">Email</label>
+        <input type="email" id="email" required aria-describedby="email-error" placeholder="name@me.com">
+        <p class="error-message milli island-1-4 push-0" id="email-error">
+          <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
+          <span class="icon-label italic micro">Provide an email</span>
+        </p>
+      </div>
+      <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
+        <label for="province" class="micro">Province</label>
+        <input id="province" class="micro" list="province-list" required aria-describedby="province-error">
+        <datalist id="province-list">
+          <option value="Northwest Territories">
+          <option value="British Columbia">
+          <option value="Ontario">
+          <option value="Alberta">
+          <option value="Quebec">
+          <option value="Saskatchewan">
+          <option value="Nova Scotia">
+          <option value="Newfoundland">
+          <option value="Manitoba">
+          <option value="New Brunswick">
+          <option value="PEI">
+          <option value="Nunavut">
+          <option value="Yukon">
+        </datalist>
+      </div>
+        <div>
+          <p class="error-message milli island-1-4 push-0" id="province-error">
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
+            <span class="icon-label italic micro">Select a province</span>
+          </p>
+        </div>
+        <div class="push-1-2 unit xs-1 m-1-2 l-1-4 gutter-1-2">
+          <label for="occupants" class="micro">Occupants</label>
+          <input type="nunber" min="1" placeholder="1" id="occupants" required aria-describedby="occupants-error">
+          <p class="error-message milli island-1-4 push-0" id="occupants-error">
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
+            <span class="icon-label italic micro">Provide number of occupants</span>
+          </p>
+        </div>
+
 </body>
 </html>
