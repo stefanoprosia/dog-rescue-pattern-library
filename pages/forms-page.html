@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../common/modules.css" rel="stylesheet">
+  <link href="../common/grid.css" rel="stylesheet">
+  <link href="../common/type.css" rel="stylesheet">
+  <link href="../common/theme.css" rel="stylesheet">
+  <link href="../patterns/header/header.css" rel="stylesheet">
+  <link href="../patterns/buttons/buttons.css" rel="stylesheet">
+  <link href="../patterns/banner/banner.css" rel="stylesheet">
+  <link href="../patterns/footer/footer.css" rel="stylesheet">
+  <link href="../patterns/forms/forms.css" rel="stylesheet">
+</head>
+<body>
+
+  <header role="banner" class="w-1">
+    <h1>LOYAL Rescue</h1>
+    <img class="logo-wrapper" src="../images/logo.svg" alt="">
+    <nav>
+      <ul class="list-group-inline">
+        <li><a class="btn btn-light" href="#">Adoption</a></li>
+        <li><a class="btn btn-light" href="#">Happy Tails</a></li>
+        <li><a class="btn btn-light" href="#">Application</a></li>
+        <li><a class="btn btn-light" href="#">FAQ</a></li>
+        <li><a class="btn btn-light" href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="title block">
+    <h2 class="gutter-1-2 pad-t-2 pad-b-2 push-0">Sign Up Now!</h2>
+  </div>
+  <form class="grid text-left" method="post" novalidate>
+    <fieldset class="">
+      <legend class="unit xs-1 gutter-1-2 pad-t pad-b push-0 field-group giga">Form/Application</legend>
+      <div class="error-message error-message-highlighted push island-1-2 unit xs-1 gutter-1-2" role="alert" aria-live="assertive">
+        <h4 class="push-0">
+          <i class="icon i-32"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
+          <span class="icon-label">Required</span>
+        </h4>
+      </div>
+      <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
+        <label for="name" class="micro">Name</label>
+        <input id="name" required aria-describedby="name-error">
+        <p class="error-message milli island-1-4 push-0" id="name-error">
+          <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
+          <span class="icon-label italic micro">Provide a name</span>
+        </p>
+      </div>
+      <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
+        <label for="email" class="micro">Email</label>
+        <input type="email" id="email" required aria-describedby="email-error" placeholder="name@me.com">
+        <p class="error-message milli island-1-4 push-0" id="email-error">
+          <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
+          <span class="icon-label italic micro">Provide an email</span>
+        </p>
+      </div>
+      <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
+        <label for="province" class="micro">Province</label>
+        <input id="province" class="micro" list="province-list" required aria-describedby="province-error">
+        <datalist id="province-list">
+          <option value="Northwest Territories">
+            <option value="British Columbia">
+              <option value="Ontario">
+                <option value="Alberta">
+                  <option value="Quebec">
+                    <option value="Saskatchewan">
+                      <option value="Nova Scotia">
+                        <option value="Newfoundland">
+                          <option value="Manitoba">
+                            <option value="New Brunswick">
+                              <option value="PEI">
+                                <option value="Nunavut">
+                                  <option value="Yukon"></option>
+        </datalist>
+      </div>
+      <div>
+        <p class="error-message milli island-1-4 push-0" id="province-error">
+          <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
+          <span class="icon-label italic micro">Select a province</span>
+        </p>
+      </div>
+      <div class="push-1-2 unit xs-1 m-1-2 l-1-4 gutter-1-2">
+        <label for="occupants" class="micro">Occupants</label>
+        <input type="number" min="1" placeholder="1" id="occupants" required aria-describedby="occupants-error">
+        <p class="error-message milli island-1-4 push-0" id="occupants-error">
+          <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
+          <span class="icon-label italic micro">Provide number of occupants</span>
+        </p>
+      </div>
+      <div class="push-1-2 unit xs-1 m-1-2 l-1-4 gutter-1-2">
+        <label for="date-available" class="micro">Date Available</label>
+        <input type="date" id="date-available" required aria-describedby="date-available-error">
+        <p class="error-message milli island-1-4 push-0" id="date-available-error">
+          <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
+          <span class="icon-label italic micro">Provide date of availability</span>
+        </p>
+      </div>
+      <div class="push-1-2 unit xs-1 gutter-1-2">
+        <label for="detailed-description" class="micro">Description</label>
+        <textarea rows="4" id="detailed-description" required aria-describedby="detailed-description-error"></textarea>
+        <p class="error-message milli island-1-4 push-0" id="detailed-description-error">
+          <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
+          <span class="icon-label italic micro">Provide a description</span>
+        </p>
+      </div>
+      <div class="push-1-2 pad-t-1-2 unit xs-1 gutter-1-2">
+        <input type="checkbox" id="agree" required aria-describedby="agree-error">
+        <label for="agree">I agree to the information stated above.</label>
+        <p class="error-message milli island-1-4 push-0" id="agree-error">
+          <i class="icon i-16"><svg><use xlink:href="../../images/icon.svg#icon-error" /></svg></i>
+          <span class="icon-label italic micro">Please agree to the conditions.</span>
+        </p>
+      </div>
+      <div class="pad-t-1-2 unit xs-1 gutter-1-2">
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+    </fieldset>
+  </form>
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+
+  <footer role="contentinfo" class="milli">
+    <p><small>LOYAL Rescue Inc. © 2005-2014</small></p>
+  </footer>
+
+</body>
+</html>

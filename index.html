@@ -62,6 +62,7 @@
                 <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="buttons" href="#buttons">Buttons</a></li>
                 <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="cards" href="#cards">Cards</a></li>
                 <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="footer" href="#footer">Footer</a></li>
+                <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="forms" href="#forms">Forms</a></li>
                 <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="header" href="#header">Header</a></li>
                 <li role="presentation"><a class="gutter pad-t-1-4 pad-b-1-4 block" role="tab" aria-controls="section" href="#section">Section</a></li>
             <li class="pad-t-1-2" role="presentation">
@@ -961,6 +962,168 @@
               <code><pre id="footer-footer-code-sample-copy-chunk">&lt;footer role="contentinfo" class="milli"&gt;
   &lt;p>&lt;small>LOYAL Rescue Inc. &#xA9; 2005-2014&lt;/small>&lt;/p>
 &lt;/footer>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
+        <section class="pattern" id="forms" role="tabpanel" hidden aria-hidden="true" style="">
+  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative" style="">
+    <h2 class="pattern-name peta push-1-4">Forms</h2>
+        <ul class="list-group-inline gutter absolute pin-cr">
+            <li>
+              <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="forms-forms-code-sample">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-code"></use></svg>
+                </i>
+              </button>
+            </li>
+            <li>
+              <a class="center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/forms/forms.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-pop-out"></use></svg>
+                </i>
+              </a>
+            </li>
+        </ul>
+  </div>
+
+
+  
+
+    <div class="pattern-details" id="forms-forms" style="">
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <iframe data-src="patterns/forms/forms.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="forms-forms-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#forms-forms-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="forms-forms-code-sample-copy-chunk">&lt;div class="title block"&gt;
+  &lt;h2 class="gutter-1-2 pad-t-2 pad-b-2 push-0">Sign Up Now!&lt;/h2>
+&lt;/div>
+&lt;form class="grid text-left" method="post" novalidate="">
+  &lt;fieldset>
+    &lt;legend class="unit xs-1 gutter-1-2 pad-t pad-b push-0 field-group giga">Form/Application&lt;/legend>
+    &lt;div class="error-message error-message-highlighted push island-1-2 unit xs-1 gutter-1-2" role="alert" aria-live="assertive">
+      &lt;h4 class="push-0">
+          &lt;i class="icon i-32">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Required&lt;/span>
+        &lt;/h4>
+    &lt;/div>
+    &lt;div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
+      &lt;label for="name" class="micro">Name&lt;/label>
+      &lt;input id="name" required aria-describedby="name-error">
+      &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label italic micro">Provide a name&lt;/span>
+      &lt;/p>
+    &lt;/div>
+    &lt;div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
+      &lt;label for="email" class="micro">Email&lt;/label>
+      &lt;input type="email" id="email" required aria-describedby="email-error" placeholder="name@me.com">
+      &lt;p class="error-message milli island-1-4 push-0" id="email-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label italic micro">Provide an email&lt;/span>
+      &lt;/p>
+    &lt;/div>
+    &lt;div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
+      &lt;label for="province" class="micro">Province&lt;/label>
+      &lt;input id="province" class="micro" list="province-list" required aria-describedby="province-error">
+      &lt;datalist id="province-list">
+        &lt;option value="Northwest Territories">
+        &lt;/option>
+        &lt;option value="British Columbia">
+        &lt;/option>
+        &lt;option value="Ontario">
+        &lt;/option>
+        &lt;option value="Alberta">
+        &lt;/option>
+        &lt;option value="Quebec">
+        &lt;/option>
+        &lt;option value="Saskatchewan">
+        &lt;/option>
+        &lt;option value="Nova Scotia">
+        &lt;/option>
+        &lt;option value="Newfoundland">
+        &lt;/option>
+        &lt;option value="Manitoba">
+        &lt;/option>
+        &lt;option value="New Brunswick">
+        &lt;/option>
+        &lt;option value="PEI">
+        &lt;/option>
+        &lt;option value="Nunavut">
+        &lt;/option>
+        &lt;option value="Yukon">&lt;/option>
+      &lt;/datalist>
+    &lt;/div>
+    &lt;div>
+      &lt;p class="error-message milli island-1-4 push-0" id="province-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label italic micro">Select a province&lt;/span>
+      &lt;/p>
+    &lt;/div>
+    &lt;div class="push-1-2 unit xs-1 m-1-2 l-1-4 gutter-1-2">
+      &lt;label for="occupants" class="micro">Occupants&lt;/label>
+      &lt;input type="number" min="1" placeholder="1" id="occupants" required aria-describedby="occupants-error">
+      &lt;p class="error-message milli island-1-4 push-0" id="occupants-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label italic micro">Provide number of occupants&lt;/span>
+      &lt;/p>
+    &lt;/div>
+    &lt;div class="push-1-2 unit xs-1 m-1-2 l-1-4 gutter-1-2">
+      &lt;label for="date-available" class="micro">Date Available&lt;/label>
+      &lt;input type="date" id="date-available" required aria-describedby="date-available-error">
+      &lt;p class="error-message milli island-1-4 push-0" id="date-available-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label italic micro">Provide date of availability&lt;/span>
+      &lt;/p>
+    &lt;/div>
+    &lt;div class="push-1-2 unit xs-1 gutter-1-2">
+      &lt;label for="detailed-description" class="micro">Description&lt;/label>
+      &lt;textarea rows="4" id="detailed-description" required aria-describedby="detailed-description-error">&lt;/textarea>
+      &lt;p class="error-message milli island-1-4 push-0" id="detailed-description-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#icon-error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label italic micro">Provide a description&lt;/span>
+      &lt;/p>
+    &lt;/div>
+    &lt;div class="push-1-2 pad-t-1-2 unit xs-1 gutter-1-2">
+      &lt;input type="checkbox" id="agree" required aria-describedby="agree-error">
+      &lt;label for="agree">I agree to the information stated above.&lt;/label>
+      &lt;p class="error-message milli island-1-4 push-0" id="agree-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icon.svg#icon-error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label italic micro">Please agree to the conditions.&lt;/span>
+      &lt;/p>
+    &lt;/div>
+    &lt;div class="pad-t-1-2 unit xs-1 gutter-1-2">
+      &lt;button class="btn btn-primary" type="submit">Submit&lt;/button>
+    &lt;/div>
+  &lt;/fieldset>
+&lt;/form>
 </pre></code>
             </div>
           </div>
