@@ -44,9 +44,9 @@
         </h4>
       </div>
       <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
-        <label for="name" class="micro">Name of dog on the LOYAL Rescue Inc. website your are applying for:</label>
-        <input id="name" required aria-describedby="name-error">
-        <p class="error-message milli island-1-4 push-0" id="name-error">
+        <label for="dogname" class="micro">Name of dog on the LOYAL Rescue Inc. website your are applying for:</label>
+        <input id="dogname" required aria-describedby="dogname-error">
+        <p class="error-message milli island-1-4 push-0" id="dogname-error">
           <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
           <span class="icon-label italic micro">Provide a dog name</span>
         </p>
@@ -64,7 +64,7 @@
       </div>
       <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
         <label for="gender" class="micro">Gender</label>
-        <input id="gender" class="micro" list="gender-list" required aria-describedby="gender-error">
+        <input id="gender" class="micro" list="gender-list">
         <datalist id="gender-list">
           <option value="Male">
             <option value="Female">
@@ -111,9 +111,9 @@
           <span class="icon-label italic micro">Provide a phone number</span>
         </p>
       </div>
-      <div class="push-1-2 unit xs-1 m-1-2 l-1-4 gutter-1-2">
+      <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
         <label for="age" class="micro">Age</label>
-        <input type="age" min="1" placeholder="1" id="age" required aria-describedby="age-error">
+        <input id="age" required aria-describedby="age-error">
         <p class="error-message milli island-1-4 push-0" id="age-error">
           <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
           <span class="icon-label italic micro">Provide your age</span>
@@ -165,7 +165,7 @@
       </div>
       <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
         <label for="homestyle" class="micro">Home Style</label>
-        <input id="homestyle" class="micro" list="homestyle-list" required aria-describedby="homestyle-error">
+        <input id="homestyle" class="micro" list="homestyle-list">
         <datalist id="homestyle-list">
           <option value="House">
             <option value="Semi-Detach">
@@ -177,7 +177,7 @@
       </div>
       <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
         <label for="doyou" class="micro">Do You</label>
-        <input id="doyou" class="micro" list="doyou-list" required aria-describedby="doyou-error">
+        <input id="doyou" class="micro" list="doyou-list">
         <datalist id="doyou-list">
           <option value="Rent">
             <option value="Own">
@@ -186,7 +186,7 @@
       </div>
       <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
         <label for="environment" class="micro">Environment</label>
-        <input id="environment" class="micro" list="environment-list" required aria-describedby="environment-error">
+        <input id="environment" class="micro" list="environment-list">
         <datalist id="environment-list">
           <option value="City">
             <option value="Suburban">
@@ -195,7 +195,7 @@
       </div>
       <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
         <label for="fenced" class="micro">Is your yard fully fenced and secure?</label>
-        <input id="fenced" class="micro" list="fenced-list" required aria-describedby="fenced-error">
+        <input id="fenced" class="micro" list="fenced-list">
         <datalist id="fenced-list">
           <option value="Yes">
             <option value="No"></option>
@@ -203,7 +203,7 @@
       </div>
       <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
         <label for="home" class="micro">Is someone home during the day?</label>
-        <input id="home" class="micro" list="home-list" required aria-describedby="home-error">
+        <input id="home" class="micro" list="home-list">
         <datalist id="home-list">
           <option value="Yes">
             <option value="No"></option>
@@ -246,7 +246,7 @@
       </div>
       <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
         <label for="insurance" class="micro">Do you plan on getting pet insurance?</label>
-        <input id="insurance" class="micro" list="insurance-list" required aria-describedby="insurance-error">
+        <input id="insurance" class="micro" list="insurance-list">
         <datalist id="insurance-list">
           <option value="Yes">
             <option value="No"></option>
@@ -254,7 +254,7 @@
       </div>
       <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
         <label for="owned" class="micro">Have you ever owned a dog before?</label>
-        <input id="owned" class="micro" list="owned-list" required aria-describedby="owned-error">
+        <input id="owned" class="micro" list="owned-list">
         <datalist id="owned-list">
           <option value="Yes">
             <option value="No"></option>
@@ -262,7 +262,7 @@
       </div>
       <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
         <label for="pets" class="micro">Do you have other pets?</label>
-        <input id="pets" class="micro" list="pets-list" required aria-describedby="pets-error">
+        <input id="pets" class="micro" list="pets-list">
         <datalist id="pets-list">
           <option value="Yes">
             <option value="No"></option>
@@ -277,17 +277,17 @@
         </p>
       </div>
       <div class="push-1-2 unit xs-1 gutter-1-2">
-        <label for="detailed-description" class="micro">Under what circumstances would you give up the dog?</label>
-        <textarea rows="4" id="detailed-description" required aria-describedby="detailed-description-error"></textarea>
-        <p class="error-message milli island-1-4 push-0" id="detailed-description-error">
+        <label for="giveup-description" class="micro">Under what circumstances would you give up the dog?</label>
+        <textarea rows="4" id="giveup-description" required aria-describedby="giveup-description-error"></textarea>
+        <p class="error-message milli island-1-4 push-0" id="giveup-description-error">
           <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
           <span class="icon-label italic micro">Provide a description</span>
         </p>
       </div>
       <div class="push-1-2 unit xs-1 gutter-1-2">
-        <label for="detailed-description" class="micro">Are there any specific behaviours the dog may have that would prompt you to give it up?</label>
-        <textarea rows="4" id="detailed-description" required aria-describedby="detailed-description-error"></textarea>
-        <p class="error-message milli island-1-4 push-0" id="detailed-description-error">
+        <label for="behaviours-description" class="micro">Are there any specific behaviours the dog may have that would prompt you to give it up?</label>
+        <textarea rows="4" id="behaviours-description" required aria-describedby="behaviours-description-error"></textarea>
+        <p class="error-message milli island-1-4 push-0" id="behaviours-description-error">
           <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
           <span class="icon-label italic micro">Provide a description</span>
         </p>
@@ -296,17 +296,17 @@
         <h4>Referance 1</h4>
       </div>
       <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
-        <label for="name" class="micro">Name</label>
-        <input id="name" required aria-describedby="name-error">
-        <p class="error-message milli island-1-4 push-0" id="name-error">
+        <label for="ref1name" class="micro">Name</label>
+        <input id="ref1name" required aria-describedby="ref1name-error">
+        <p class="error-message milli island-1-4 push-0" id="ref1name-error">
           <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
           <span class="icon-label italic micro">Provide a name</span>
         </p>
       </div>
       <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
-        <label for="phone" class="micro">Phone</label>
-        <input id="phone" required aria-describedby="phone-error">
-        <p class="error-message milli island-1-4 push-0" id="phone-error">
+        <label for="ref1phone" class="micro">Phone</label>
+        <input id="ref1phone" required aria-describedby="ref1phone-error">
+        <p class="error-message milli island-1-4 push-0" id="ref1phone-error">
           <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
           <span class="icon-label italic micro">Provide a phone number</span>
         </p>
@@ -315,17 +315,17 @@
         <h4>Referance 2</h4>
       </div>
       <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
-        <label for="name" class="micro">Name</label>
-        <input id="name" required aria-describedby="name-error">
-        <p class="error-message milli island-1-4 push-0" id="name-error">
+        <label for="ref2name" class="micro">Name</label>
+        <input id="ref2name" required aria-describedby="ref2name-error">
+        <p class="error-message milli island-1-4 push-0" id="ref2name-error">
           <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
           <span class="icon-label italic micro">Provide a name</span>
         </p>
       </div>
       <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
-        <label for="phone" class="micro">Phone</label>
-        <input id="phone" required aria-describedby="phone-error">
-        <p class="error-message milli island-1-4 push-0" id="phone-error">
+        <label for="ref2phone" class="micro">Phone</label>
+        <input id="ref2phone" required aria-describedby="ref2phone-error">
+        <p class="error-message milli island-1-4 push-0" id="ref2phone-error">
           <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
           <span class="icon-label italic micro">Provide a phone number</span>
         </p>
@@ -334,17 +334,17 @@
         <h4>Referance 3</h4>
       </div>
       <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
-        <label for="name" class="micro">Name</label>
-        <input id="name" required aria-describedby="name-error">
-        <p class="error-message milli island-1-4 push-0" id="name-error">
+        <label for="ref3name" class="micro">Name</label>
+        <input id="ref3name" required aria-describedby="ref3name-error">
+        <p class="error-message milli island-1-4 push-0" id="ref3name-error">
           <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
           <span class="icon-label italic micro">Provide a name</span>
         </p>
       </div>
       <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
-        <label for="phone" class="micro">Phone</label>
-        <input id="phone" required aria-describedby="phone-error">
-        <p class="error-message milli island-1-4 push-0" id="phone-error">
+        <label for="ref3phone" class="micro">Phone</label>
+        <input id="ref3phone" required aria-describedby="ref3phone-error">
+        <p class="error-message milli island-1-4 push-0" id="ref3phone-error">
           <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
           <span class="icon-label italic micro">Provide a phone number</span>
         </p>
