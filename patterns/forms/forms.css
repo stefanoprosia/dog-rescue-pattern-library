@@ -1,0 +1,36 @@
+body {
+  background-color: var(--color-neutral);
+}
+
+label {
+  font-family: var(--font-primary);
+}
+
+legend {
+  font-family: var(--font-primary);
+}
+
+.form-title {
+  color: var(--color-secondary);
+}
+
+.form-list {
+  list-style-type: none;
+}
+
+.is-validated input:invalid,
+.is-validated input[type="checkbox"]:invalid + label::before {
+  border-color: var(--color-primary);
+}
+
+.error-message {
+  display: none;
+  background-color:  #ff4d4d;
+  color: #7a1f1f;
+}
+
+.is-validated > .error-message:first-child,
+.is-validated input:invalid + .error-message,
+.is-validated input:invalid + label + .error-message {
+  display: block;
+}
